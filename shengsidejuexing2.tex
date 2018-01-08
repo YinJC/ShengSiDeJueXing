@@ -2,7 +2,7 @@
 %! TEX encoding = UTF-8 Unicode
 
 %========================================全文布局
-\documentclass[12pt,twoside,openany]{book}
+\documentclass[twoside,openany]{book}
 \usepackage[screen,paperheight=14.4cm,paperwidth=10.8cm,
 left=2mm,right=2mm,top=2mm,bottom=5mm]{geometry}
 
@@ -17,7 +17,9 @@ left=2mm,right=2mm,top=2mm,bottom=5mm]{geometry}
 \usepackage{wallpaper}
 \usepackage{indentfirst}
 %========================================设置字体
-\usepackage[CJKnumber]{xeCJK}
+\usepackage{ctex}
+%\usepackage[CJKnumber]{xeCJK}
+\usepackage{xpinyin}
 \setCJKmainfont[BoldFont={Adobe Heiti Std R}]{Hiragino Sans GB W3}
 \setCJKfamilyfont{kai}{Adobe Kaiti Std R}
 \setCJKfamilyfont{hei}{Adobe Heiti Std R}
@@ -30,7 +32,7 @@ left=2mm,right=2mm,top=2mm,bottom=5mm]{geometry}
 \renewcommand\contentsname{目~录~}
 \renewcommand\listfigurename{图~列~表~}
 \renewcommand\listtablename{表~目~录~}
-
+\usepackage{romannum}
 %========================================章节样式
 \titlecontents{chapter}
 [0em]
@@ -45,7 +47,7 @@ left=2mm,right=2mm,top=2mm,bottom=5mm]{geometry}
 {}{\titlerule*{.}\contentspage}
 
 \titleformat{\chapter}[display]
-	{\CJKfamily{fsong}\Large\centering}
+	{\CJKfamily{fsong}\large\centering}
 	{\titlerule[1pt]%
 	 \filleft%
 	}
@@ -70,51 +72,49 @@ left=2mm,right=2mm,top=2mm,bottom=5mm]{geometry}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot{}
-\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LE,RO]{\scriptsize\thepage}
 \setlength{\footskip}{6pt}
 %========================================标题作者
 \title{生死的觉醒(下)}
 \author{高桥信次\ 著\\ 慰宣\ 译}
 \date{}
-
+\newcommand{\mt}[1]{\textbullet \textbf{#1}}
 %========================================正文
 \begin{document}
 \TileSquareWallPaper{1}{TGTamber}%背景图片
-
+\pagenumbering{arabic}
 \maketitle
 \tableofcontents
 %\newpage
 
+\zihao{4}
 \noindent
 %\chapter*{封面语}\addcontentsline{toc}{chapter}{\large\CJKfamily{hei}封面语}
 
 
 \setcounter{chapter}{3}
-\chapter{第四章\ 丕葩利•桠那出家}\label{ch4}
-\section{富家子丕葩利•桠那}\label{sec4.1}
+\chapter{第四章\ \xpinyin*{丕葩利}\textperiodcentered \xpinyin*{桠那}出家}\label{ch4}
+
+竹林精舍东北边的婆罗门城市,有个富家子弟丕葩利\textperiodcentered 桠那的年轻人，对所学以婆罗门经典产生了许多疑问。
+
+\newpage
+\section{富家子丕葩利\textperiodcentered 桠那}\label{sec4.1}
 
 弟子们由于佛陀的正法与感化而步上正道，他们的心亮着永不熄灭的安泰的法灯。
-
-尤其是舍利弗和目犍连二人，每当听到佛陀的纶音，都会喜不自胜地流下惑激之泪。
-
-泪水泉涌不止。
+尤其是舍利弗和目犍连二人，每当听到佛陀的纶音，都会喜不自胜地泪水泉涌不止。
 
 对这两人而言，如果今世不能遇到佛陀，他们就像是迷途的羔羊，无法听到来自灵魂深处的声音，也无法做佛陀的左右手，参与佛陀普渡众生的工作。
-
 自从跟佛陀相遇后，一切的苦恼、迷惘都一扫而空，而得以无止境地享受那有始以来就禀赋了的生命的喜悦。
 
 目犍连的心眼已经打开，他看到佛陀的过去世，以及过去世与现世的渊源，也能领会到佛陀说法的内涵与过去世所说的完全契合，因而深深体悟到转生轮回的奥秘。
 
 一个人能由苦恼转为喜悦，并从迷惑中走出来并建立起坚定不移的信念，这都是受佛陀正法之赐。
 
-灵魂不生不灭，死亡纯属不可能。
+灵魂不生不灭，死亡纯属不可能；灵魂生生不息于转生轮回中，肉体的生与死，不过是短暂的幻象。
 
-灵魂生生不息于转生轮回中，肉体的生与死，不过是短暂的幻象。
+微妙的心灵被肉体层层包围着，并受着喜怒哀乐的摆布。这四样东西伤害了灵魂，使人们的生活失去协调。只有在了解佛法之后，心量才能日益扩大。一颗心守住八正道，并精进地实践之，终有成道的一天。
 
-微妙的心灵被肉体层层包围着，并受着喜怒哀乐的摆布。这四样东西伤害了灵魂，使人们的生活失去谐调。只有在了解佛法之后，心量才能日益扩大。一颗心守住八正道，并精进地实践之，终有成道的一天。
-
-舍利弗的智慧和目犍连的神通，皆为佛弟子之冠，这使许多弟子心生羡嫉。加之二人精进不懈的求道态度，更感动了先他们而来的同道们。
-
+舍利弗的智慧和目犍连的神通，皆为佛弟子之冠，这使许多弟子由羡生妒。加之二人精进不懈的求道态度，更感动了先他们而来的同道们。
 他们的真挚与坚定，绝非出自偶然，诚如佛陀所说，是跟过去世有关连的，过去的种种实决定了今世的一切，使他们今世有着异于常人的理解力。
 
 佛陀此刻在竹林精舍的林间，沉入冥想。
@@ -123,12 +123,7 @@ left=2mm,right=2mm,top=2mm,bottom=5mm]{geometry}
 
 「不久会有一个修行人前来求道，他会成为你的弟子，他不久可达到阿罗汉的境界，将佛法传扬出去。」
 
-佛陀结束禅定后，一直回味着刚才的经历。
-
-佛陀对于将来的事情，丝毫没有困扰与迷惑。
-
-当然，对日常生活中的琐事，如教团的管理、传道的方式等等常多所思虑，但他不为这些琐事所束缚，也不会自寻烦恼。
-
+佛陀结束禅定后，一直回味着刚才的经历，但对于他将来的事情，丝毫没有困扰与迷惑。日常生活中的琐事，如教团的管理、传道的方式等等虽不免多所思虑，但他并不为这些琐事所束缚，也不会自寻烦恼。
 这一切都因为凡事都维系在「缘生」的道理上，能觉悟此理，就能顺利地掌握一切。
 
 佛陀时常能在心田听到来自大宇宙的真理之声，与其说是听到，不如说这声音自己来自心灵深处。
@@ -175,7 +170,7 @@ left=2mm,right=2mm,top=2mm,bottom=5mm]{geometry}
 
 不一会儿，淡淡的，柔和的金黄色光芒，笼罩住佛陀的全身。然后再向四方扩散、扩散，最后和大自然融合为一。
 
-在此同时，竹林精舍的东北边，一个婆罗门种的城市，有个名叫丕葩利•桠那的年轻人。
+在此同时，竹林精舍的东北边，一个婆罗门种的城市，有个名叫丕葩利\textperiodcentered 桠那的年轻人。
 
 他的父亲摩诃康毗拉是个拥有无数佃农的大富农。
 
@@ -394,15 +389,11 @@ left=2mm,right=2mm,top=2mm,bottom=5mm]{geometry}
 「裘达尼耶不了解我，所以会觉得我很奇怪。大概是因为没有人会像我一样，为物色新娘还来塑一个理想的人像吧！但是又有什么其他的办法来让父母了解我的想法呢？相信这样一来，他们一定会死心了吧！」
 
 桠那由于一个接一个的杂念涌上心头而停止了冥想，并睁开双眼。
-
 薪火仍然烧着，火焰不断向上冒着。
-
 由于火光反射到脸上，使得桠那看来很像一个怪物。但桠那此时的心已完全平静下来。
 
 星星在夜空中闪烁着，桠那燃起一股热望，想纵身飞向星光深处。
-
 如此凝望星星的时候，他的心深深为大自然的神秘所吸引，种种杂念也倏尔消失得无影无踪了。
-
 然后他将视线移向薪火，此时薪火散出噼啪的声响，这声响似在努力把他唤回现实。
 
 燃烧着的火焰，的确是活生生地存在着，它是生的象征。枯木与干枝叶都不言不语的，但是只要将它们点燃，它们就能把火焰喷向高空，夹着红、黄、蓝等色彩，炫耀着自己的存在。同时，它们还向四面八方放出光亮。
@@ -513,7 +504,7 @@ left=2mm,right=2mm,top=2mm,bottom=5mm]{geometry}
 
 全家人都为着寻找桠那心目中的妻子而忙碌着。
 
-一日，一位名竦陀利的修行僧来看那的母亲。
+一日，一位名\xpinyin*{竦}陀利的修行僧来看那的母亲。
 
 因为他知道某处有—个和木像所雕完全一样的女子。
 
@@ -523,7 +514,7 @@ left=2mm,right=2mm,top=2mm,bottom=5mm]{geometry}
 
 桠那的父母因而和竦陀利启程前往邻国的拿烂腊城。
 
-城内有一位大商贾名麻夏的女儿巴漏喇就是他们此行探访的对象。
+城内有一位大商贾名麻夏的女儿巴漏\xpinyin*{喇}就是他们此行探访的对象。
 
 两人在麻夏家看到她。
 
@@ -545,7 +536,7 @@ left=2mm,right=2mm,top=2mm,bottom=5mm]{geometry}
 
 「康毗拉夫妇的名声你是知道的，他的儿子希望娶你这样的人为妻。真奇怪，这个人像竟会这么像你，这是求之不得的事，如果你答应这件婚事，他们马上就会带桠那来我们这里、你不用马上做答覆，考虑考虑也好。」
 
-巴漏喇见双亲对这件事如此热衷，并声称是一件求之不得的事，也有些心动。她曾有过终生不嫁的念头，甚至想到情况许可，她要出家以济渡可怜的众生，她为什么会有这种意图呢？这事发生在两年前她与父亲到憍桑毗城去旅行。在憍桑毗城，有个痳疯病人聚集的地方。
+巴漏喇见双亲对这件事如此热衷，并声称是一件求之不得的事，也有些心动。她曾有过终生不嫁的念头，甚至想到情况许可，她要出家以济渡可怜的众生，她为什么会有这种意图呢？这事发生在两年前她与父亲到\xpinyin*{憍桑毗}城去旅行。在憍桑毗城，有个痳疯病人聚集的地方。
 
 父亲不经意地带着巴漏喇从该处经过。
 
